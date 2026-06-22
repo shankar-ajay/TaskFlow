@@ -1,0 +1,144 @@
+.backlog-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.backlog-header {
+  padding: 20px 24px 16px;
+  background: #fff;
+  border-bottom: 1px solid #dfe1e6;
+  flex-shrink: 0;
+}
+
+.backlog-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.backlog-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 24px 40px;
+}
+
+.backlog-sprint-section {
+  margin-bottom: 16px;
+  border: 1px solid #dfe1e6;
+  border-radius: 6px;
+  background: #fafbfc;
+}
+
+.backlog-sprint-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 6px;
+  transition: background 0.12s;
+}
+
+.backlog-sprint-header:hover {
+  background: #f4f5f7;
+}
+
+.backlog-chevron {
+  color: #6b778c;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.backlog-chevron.expanded {
+  transform: rotate(90deg);
+}
+
+.backlog-sprint-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.backlog-sprint-dates {
+  font-size: 12px;
+  color: #6b778c;
+}
+
+.backlog-sprint-count {
+  font-size: 12px;
+  color: #6b778c;
+}
+
+.backlog-sprint-points {
+  font-size: 11px;
+  font-weight: 700;
+  color: #6b778c;
+  background: #dfe1e6;
+  padding: 2px 7px;
+  border-radius: 10px;
+}
+
+.backlog-sprint-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.backlog-sprint-body {
+  padding: 4px 14px 14px;
+}
+
+.backlog-issue-row {
+  margin-bottom: 4px;
+}
+
+.backlog-empty-row {
+  padding: 16px;
+  text-align: center;
+  color: #b3bac5;
+  font-size: 13px;
+  border: 2px dashed #dfe1e6;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+
+.backlog-add-issue-btn {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 1px dashed #dfe1e6;
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-size: 13px;
+  color: #6b778c;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background 0.12s, border-color 0.12s;
+}
+
+.backlog-add-issue-btn:hover {
+  background: #f4f5f7;
+  border-color: #b3bac5;
+  color: #172b4d;
+}
+
+.backlog-divider {
+  font-size: 12px;
+  font-weight: 700;
+  color: #6b778c;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 24px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #dfe1e6;
+}

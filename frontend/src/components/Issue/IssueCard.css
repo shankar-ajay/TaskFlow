@@ -1,0 +1,130 @@
+.issue-card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  box-shadow: 0 1px 3px rgba(9,30,66,0.12), 0 0 1px rgba(9,30,66,0.08);
+  cursor: pointer;
+  transition: box-shadow 0.15s, transform 0.1s;
+  border: 1px solid transparent;
+  user-select: none;
+}
+
+.issue-card:hover {
+  box-shadow: 0 3px 8px rgba(9,30,66,0.16), 0 0 1px rgba(9,30,66,0.08);
+  border-color: #deebff;
+  transform: translateY(-1px);
+}
+
+.issue-card:active {
+  transform: translateY(0);
+}
+
+.issue-card[draggable="true"] {
+  cursor: grab;
+}
+
+.issue-card[draggable="true"]:active {
+  cursor: grabbing;
+  opacity: 0.85;
+}
+
+.issue-card-title {
+  font-size: 13.5px;
+  color: #172b4d;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+.issue-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.issue-card-meta-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.issue-card-meta-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.type-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.priority-icon {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.issue-card-label {
+  font-size: 10px;
+  color: #6b778c;
+  background: #f4f5f7;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.issue-card-points {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #f4f5f7;
+  color: #6b778c;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.avatar {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  flex-shrink: 0;
+  cursor: default;
+}
+
+.avatar-empty {
+  border-radius: 50%;
+  background: #dfe1e6;
+  color: #6b778c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  flex-shrink: 0;
+}
