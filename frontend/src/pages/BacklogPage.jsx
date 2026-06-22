@@ -7,7 +7,7 @@ import CreateSprintModal from '../components/Modal/CreateSprintModal';
 import './BacklogPage.css';
 
 function SprintSection({ sprint, issues, onIssueClick, expanded, onToggle, onStart, onComplete, onAddIssue }) {
-  const doneCount = issues.filter(i => i.status === 'DONE').length;
+  //const doneCount = issues.filter(i => i.status === 'DONE').length;
   const totalPoints = issues.reduce((sum, i) => sum + (i.storyPoints || 0), 0);
 
   return (

@@ -3,7 +3,7 @@ import { useApp } from '../../context/AppContext';
 import './Navbar.css';
 
 export default function Navbar() {
-  const { searchQuery, setSearchQuery, setShowCreateProject, currentProject } = useApp();
+  const { searchQuery, setSearchQuery, setShowCreateProject} = useApp();
   const [showSearch, setShowSearch] = useState(false);
 
   return (

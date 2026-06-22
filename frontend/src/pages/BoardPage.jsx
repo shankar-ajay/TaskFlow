@@ -69,7 +69,7 @@ export default function BoardPage() {
   const sprint = currentSprints.find(s => s.id === sprintId) || displaySprint;
 
   const issues = sprintId ? getSprintIssues(sprintId) : [];
-  const todoCount = issues.filter(i => i.status !== 'DONE').length;
+  //const todoCount = issues.filter(i => i.status !== 'DONE').length;
   const doneCount = issues.filter(i => i.status === 'DONE').length;
   const progress = issues.length ? Math.round((doneCount / issues.length) * 100) : 0;
 

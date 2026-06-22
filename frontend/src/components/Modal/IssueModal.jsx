@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useApp } from '../../context/AppContext';
-import { TypeBadge, Avatar } from '../Issue/IssueCard';
+import { TypeBadge} from '../Issue/IssueCard';
 import './Modal.css';
 
 const TYPES = ['STORY', 'BUG', 'TASK', 'EPIC', 'SUBTASK'];
@@ -13,10 +13,14 @@ export default function IssueModal({ issue, onClose }) {
   const [description, setDescription] = useState(issue.description || '');
   const [confirmDelete, setConfirmDelete] = useState(false);
 
-  useEffect(() => {
-    setTitle(issue.title);
-    setDescription(issue.description || '');
-  }, [issue.id]);
+ // useEffect(() => {
+ //   setTitle(issue.title);
+ //   setDescription(issue.description || '');
+ // }, [issue.id]);
+ useEffect(() => {
+  setTitle(issue.title);
+  setDescription(issue.description || '');
+}, [issue.id, issue.title, issue.description]);
 
   const handleTitleBlur = () => {
     if (title.trim() && title !== issue.title) updateIssue(issue.id, { title: title.trim() });
